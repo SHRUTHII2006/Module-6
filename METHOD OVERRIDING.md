@@ -34,10 +34,52 @@ To write a Python program to create a Parent class `Bird` and inherit two child 
 ### PROGRAM
 
 ```
+class Bird:
+
+    def __init__(self):
+
+        print("There are many types of birds.")
+    
+    def flight(self):
+
+        print("Most of the birds can fly but some cannot.")
+
+class Sparrow(Bird):
+
+    def flight(self):
+
+        print("Sparrows can fly.")
+
+class Ostrich(Bird):
+
+    def flight(self):
+
+        print("Ostriches cannot fly.")
+
+
+bird = Bird()
+
+bird.flight()
+
+sparrow = Sparrow()
+
+sparrow.flight()
+
+ostrich = Ostrich()
+
+ostrich.flight()
+
+
 
 ```
 
 ### OUTPUT
 
 
+![image](https://github.com/user-attachments/assets/3cec5d3c-060d-4358-b62e-88fcb771eb69)
+
+
 ### RESULT
+
+Thus the Python program to create a Parent class `Bird` and inherit two child classes `Sparrow` and `Ostrich` from the `Bird` class with the same method `flight()`. Create an object for each class and call the methods of the class which will print the name of the bird that is flying was successfully executed.
+
