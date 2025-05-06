@@ -4,7 +4,7 @@
 ---
 
 ### AIM  
-To write a Python program to perform division of two complex numbers using the binary '/' operator overloading. Class name: `Complex`, where the objects `Ob1 = Complex(10, 21)` and `Ob2 = Complex(2, 3)` represent complex numbers.
+To write a Python program to perform division of two complex numbers using the binary '/' operator overloading. Class name: `Complex`, where the objects `Ob1 = Complex(1, 2)` and `Ob2 = Complex(2, 3)` represent complex numbers.
 
 ---
 
@@ -21,7 +21,7 @@ To write a Python program to perform division of two complex numbers using the b
 4. **Define the `__repr__()` method** to represent the complex number as a string.
    - Return a string formatted to display the real and imaginary parts with one decimal place using `f"{self.real:.1f}, {self.imag:.1f}"`.
 5. **Create two objects of the Complex class**:
-   - `Ob1 = Complex(10, 21)` represents the complex number `10 + 21i`.
+   - `Ob1 = Complex(10, 21)` represents the complex number `1 + 2i`.
    - `Ob2 = Complex(2, 3)` represents the complex number `2 + 3i`.
 6. **Perform the division operation**: Use the `/` operator to divide `Ob1` by `Ob2`. This will call the `__truediv__()` method.
 7. **Print the result**: Print the result of the division, which will be formatted by the `__repr__()` method.
@@ -33,10 +33,37 @@ To write a Python program to perform division of two complex numbers using the b
 
 ```
 
+class complex:
+
+    def __init__(self, a, b):
+
+        self.a = a
+
+        self.b = b
+
+    def __add__(self, other):
+
+        return self.a *other.a, self.b * other.b
+
+Ob1 = complex(1,2)
+
+Ob2 = complex(2, 3)
+
+Ob3 = Ob1 + Ob2
+
+print(Ob3)
+
+
 ```
 
 ### OUTPUT
 
 
+![image](https://github.com/user-attachments/assets/ac9e422c-9eb8-46cc-9af8-f62150a96215)
+
+
+
 ### RESULT
+
+Thus the Python program to perform division of two complex numbers using the binary '/' operator overloading. Class name: `Complex`, where the objects `Ob1 = Complex(1, 2)` and `Ob2 = Complex(2, 3)` represent complex numbers was executed successfully.
 
