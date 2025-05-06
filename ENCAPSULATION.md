@@ -4,22 +4,33 @@
 ---
 
 ### AIM  
-To write a Python program to create a class `Student` with the private members `name` and `age`, and add getter and setter methods to initialize and modify the `age` variable.
+To create an Employee class by defining employee attributes such as name and salary as an instance variable and implementing behavior using work() and show() instance methods.
 
 ---
 
 ### ALGORITHM
 
-1. **Start the Program.**
-2. **Define the `Student` class.**
-   - Inside the `Student` class, define the `__init__` method to initialize `name` and the private member `__age`.
-3. **Define a getter method** `get_age` to return the value of the private member `__age`.
-4. **Define a setter method** `set_age` to set a new value to the private member `__age`.
-5. **Create an object `stud`** of the `Student` class with the name 'Jessa' and age 14.
-6. **Print the name and the age** of `stud` using the getter method.
-7. **Use the setter method** `set_age` to change the age of `stud` to 16.
-8. **Print the name and the updated age** of `stud` using the getter method.
-9. **End the program.**
+1.Start
+
+2.Define the Employee class
+
+3.Inside the class:
+
+4.Define the constructor method __init__(self, name, salary)
+
+5.Assign name to an instance variable self.name
+
+6.Assign salary to an instance variable self.salary
+
+7.Define a method work(self)
+
+8.Display or return a message indicating that the employee is working
+
+9.Define a method show(self)
+
+10.Display or return the employee's name and salary
+
+11.End
 
 ---
 
@@ -27,13 +38,38 @@ To write a Python program to create a class `Student` with the private members `
 
 ```
 
+class emp:
+
+    def __init__(self,name,salary):
+
+        self.name=name
+
+        self.salary=salary
+
+    def work(self):
+
+        self.wor="NLP"
+
+    def show(self):
+
+        print(f"Name:  {self.name} Salary: {self.salary}")
+
+        print(f"{self.name} is working on {self.wor}")
+
+e=emp("Jessa",8000)
+
+e.work()
+
+e.show()
 
 
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/2287c421-c8dd-48e4-838c-862e59e740dd)
+
 
 ### RESULT
 
-
+Thus the python program to create an Employee class by defining employee attributes such as name and salary as an instance variable and implementing behavior using work() and show() instance methods was created and executed successfully.
